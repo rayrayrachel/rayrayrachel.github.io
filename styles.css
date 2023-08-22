@@ -209,3 +209,23 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  position: relative;
+}
+
+.image-container img {
+  transition: transform 0.8s ease;
+}
+
+.image-container:hover img {
+  transform: rotate(360deg) translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+

@@ -7,7 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-
+  padding: 20px;
 }
 
 /* Header/logo Title */
@@ -82,6 +82,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  z-index: 3;
 }
 
 /* Style the navigation bar links */
@@ -92,18 +93,32 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  z-index: 3;
 }
 
 /* Right-aligned link */
 .navbar a.right {
   float: right;
+  z-index: 3;
 }
 
 /* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
+  z-index: 3;
 }
+
+/* Sticky Navigation Bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+
 
 /* Column container */
 .row {  
@@ -128,9 +143,10 @@ body {
   flex: 70%;
   background-color: white;
   padding: 20px;
+  margin: auto;
 }
 
-/* Fake image, just for this example */
+/* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
@@ -141,18 +157,9 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: rgb(95, 95, 95);
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -214,7 +221,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 28vh;
   position: relative;
 }
 
@@ -229,3 +236,77 @@ body {
   left: 50%;
 }
 
+.image-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover::after {
+  opacity: 1;
+}
+
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}

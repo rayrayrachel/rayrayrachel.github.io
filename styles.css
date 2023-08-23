@@ -37,6 +37,7 @@ body {
   background: #000000;
   position: relative;
   z-index: 2;
+
 }
 
 #ArtHeader::before {
@@ -50,6 +51,7 @@ body {
   background-size: 100%;
   opacity: 0.5;
   z-index: -1;
+
 }
 
 #PhotoHeader {
@@ -94,6 +96,7 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   z-index: 3;
+  
 }
 
 /* Right-aligned link */
@@ -107,6 +110,7 @@ body {
   background-color: #ddd;
   color: black;
   z-index: 3;
+
 }
 
 /* Sticky Navigation Bar */
@@ -114,9 +118,11 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+
 }
 .sticky + .content {
   padding-top: 102px;
+
 }
 
 
@@ -142,8 +148,7 @@ body {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
-  padding: 20px;
-  margin: auto;
+
 }
 
 /* Fake image */
@@ -166,7 +171,22 @@ body {
   .row {   
     flex-direction: column;
   }
+
 }
+
+@media screen and (min-width: 1000px) {
+.column{
+  width: 280px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+.column{
+  max-width: 700px;
+}
+}
+
+
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
@@ -253,11 +273,39 @@ body {
   opacity: 1;
 }
 
+.posttt{
+  background-color: #e6e6e6;
+  margin:0px 20px;
+  padding: 10px 20px 10px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Art Galary */
+/* Art Galary */
+/* Art Galary */
+/* Art Galary */
+/* Art Galary */
+
+.main1 {   
+
+  background-color: rgb(143, 0, 0);
+
+}
 
 .row {
-  margin: 8px -16px;
+  margin: 8px 8px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -269,8 +317,8 @@ body {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
   display: none; /* Hide columns by default */
+
 }
 
 /* Clear floats after rows */
@@ -309,4 +357,9 @@ body {
 .btn.active {
   background-color: #666;
    color: white;
+}
+
+#myBtnContainer{
+background-color: #d1d4d4;
+padding:5px;
 }

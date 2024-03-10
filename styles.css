@@ -308,7 +308,7 @@ body {
   margin: 8px 8px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+/* Add padding BETWEEN each column*/
 .row,
 .row > .column {
   padding: 8px;

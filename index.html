@@ -1,23 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<!-- Test Push -->
-    <head>
-        <meta charset="utf-8">
-        <title>Home Page</title>
-        <link rel="stylesheet" href="styles.css">
 
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
 
-    </head>
-
-
-    <body>
-
-        <div class="header">
+<div class="header">
   <h1 class="glow">W E L C O M E</h1>
-  <p class="cursive">Welcome to Ray Ray's Blog!</br> Prepare yourself to be amused.</p>
-
+  <p class="cursive">Welcome to Ray Ray's Blog!<br>Prepare yourself to be amused.</p>
 </div>
 
 <div class="navbar" id="myNavbar">
@@ -27,190 +22,183 @@
   <a href="./More" class="right">More</a>
 </div>
 
-
-
-
-
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
     <h5>Here is a photo of me:</h5>
-
-    <div class="image-container">    
-      <img class="myphoto" style="height:250px; width: 200px;  border-radius: 50%" src="./ArtWork/Me.jpg" alt="Image">
+    <div class="image-container">
+      <img class="myphoto" style="height:250px; width: 200px;  border-radius: 50%" src="./ArtWork/Me.jpg"
+           alt="Image">
     </div>
-
-    <h6>Please dont waste too much time hovering :)</h6>
-
-  </br>
-    <h3>I DO WHEN IM BORED</h3>
-
-    <a href="./Photo" style="color:rgb(0, 0, 0);text-decoration:none; ">
-    <div class="fakeimg" style="height:60px;" >
-
-      <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp  Photo Editing
-   
-    </div> </a><br>
-
+    <h6>Please don't waste too much time hovering :)</h6>
+    <h3>I DO WHEN I'M BORED</h3>
+    <!-- Skills Nevigation -->
     <a href="./Art" style="color:rgb(0, 0, 0);text-decoration:none; ">
+      <div class="fakeimg" style="height:60px;">
+        <i class="fa fa-star" style="font-size:20px"></i>
+        &nbsp; Drawing
+      </div>
+    </a><br>
+    <a href="./Photo" style="color:rgb(0, 0, 0);text-decoration:none; ">
+      <div class="fakeimg" style="height:60px;">
+        <i class="fa fa-star" style="font-size:20px"></i>
+        &nbsp; Photo Editing
+      </div>
+    </a><br>
     <div class="fakeimg" style="height:60px;">
       <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp  Drawing
-    </div></a><br>
-
-    <div class="fakeimg" style="height:60px;">
-      <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp  Cooking
+      &nbsp; Cooking
     </div><br>
-
     <h3>ACHIEVEMENTS</h3>
+    <!-- Achievements Nevigation -->
     <div class="fakeimg" style="height:60px;">
       <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp  Play A Song
+      &nbsp; Play A Song
     </div><br>
-
     <div class="fakeimg" style="height:60px;">
       <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp   Hiking
+      &nbsp; Hiking
     </div><br>
-
     <div class="fakeimg" style="height:60px;">
       <i class="fa fa-star" style="font-size:20px"></i>
-      &nbsp   ...
+      &nbsp; ...
     </div><br>
-
-
-
   </div>
 
-
-
   <div class="main">
-    <div class="main">
-      <div style="border-bottom: 10px solid white;border-left: 20px solid white;border-right: 20px solid white;">
-        <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection2('all')"> ALL</button>
+    <!-- Content Filter-->
+    <div style="border-bottom: 10px solid white;border-left: 20px solid white;border-right: 20px solid white;">
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection2('all')"> ALL</button>
+        <button class="btn" onclick="filterSelection2('programming')"> PROGRAMMING</button>
+        <button class="btn" onclick="filterSelection2('robotics')"> ROBOTICS</button>
+        <button class="btn" onclick="filterSelection2('academics')"> ACADEMICS</button>
+        <button class="btn" onclick="filterSelection2('competition')"> COMPETITION</button>
+      </div>
+    </div>
 
-          <button class="btn" onclick="filterSelection2('programming')"> PROGRAMMING</button>
-          <button class="btn" onclick="filterSelection2('robotics')"> ROBOTICS</button>
-          <button class="btn" onclick="filterSelection2('academics')"> ACADEMICS</button>
-          <button class="btn" onclick="filterSelection2('competition')"> COMPETITION</button>
-
+    <!-- Content columns -->
+    <div class="column programming">
+      <div class="content">
+        <div class="posttt">
+          <h2>[PROGRAMMING] Chips Challenge</h2>
+          <h5>Developing a classic digital game || Java JavaFX SceneBuilder Intellij Github ||
+            October 2023</h5>
+          <video width="100%" height="auto" controls poster="Academic/thumbnails/cosmicEnigmas.png">
+            <source src="Academic/chipsChallenge.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Cosmic Enigmas</p>
+          <p>I revamped the classic pixel digital game 'Chips Challenge,' using Java. The game is to
+            collect all the chips scattered across the landscape. Unlock portals by obtaining the
+            corresponding colored keys. Safely guide the astronaut to the exit. </p>
         </div>
       </div>
+    </div>
 
-      <div class="column programming">
-        <div class="content">
-          <div class="posttt">
-            <h2>[PROGRAMMING] Chips Challenge</h2>
-            <h5>Developing a classic digital game || Java JavaFX SceneBuilder Intellij Github || October 2023</h5>
-            <video width="100%" height="auto" controls poster="Academic/thumbnails/cosmicEnigmas.png">
-              <source src="Academic/chipsChallenge.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p>Cosmic Enigmas</p>
-            <p>I revamped the classic pixel digital game 'Chips Challenge,' using Java. The game is to collect all the chips scattered across the landscape.
-              Unlock portals by obtaining the corresponding coloured keys.
-              Safely guide the astronaut to the exit. </p>
-          </div></div></div>
-
-      <div class="column academics">
-        <div class="content">
-      <div class="posttt">
-        <h2>[MACHINE LEARNING] Machine Learning</h2>
-        <h5>Study on risk factors associated with HIV || Python || Dec 2022</h5>
-        <video width="100%" height="auto" controls>
-          <source src="Academic/machineLearning.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p>Machine Learning</p>
-        <p>I studied the relationship between HIV risk factors and the death rate percentage dataset. We analysed and visualised the data using python, performed maximum likelihood estimation, finding square sum differences of the linear and quadratic functions. </p><br>
-      </div>      </div>      </div>
-
-      <div class="column robotics">
-        <div class="content">
-      <div class="posttt">
-        <h2>[EMBEDED SYSTEM] Robot Car</h2>
-        <h5>Burning programs into robot car || C# TeraTerm Arduino Keil || March 2022</h5>
-        <video width="100%" height="auto" controls poster="Academic/thumbnails/robotCar.png">
-          <source src="Academic/robotCarDemoVideo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p>Robotics</p>
-        <p>I did simple soldering and assembled a robot car using the STM32F103 Black Pill as the main microcontroller and an Arduino board for the controller. The car features ultrasound functionality, infrared light for line tracking, and is equipped with Bluetooth remote control.</p>
-      </div></div></div>
-
-      <div class="column programming">
-        <div class="content">
-    <div class="posttt">
-      <h2>[PROGRAMMING] Digit Invaders</h2>
-      <h5>Developing a classic digital game || C++ C# GUI || March 2021</h5>
-      <video width="100%" height="auto" controls>
-        <source src="Academic/miniGame.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p>PolyU Invaders</p>
-      <p>I revamped the classic CASIO calculator game 'Digit Invader,' transforming it into a cool graphical computer game.</p>
-    </div></div></div>
-
-      <div class="column academics">
-        <div class="content">
-    <div class="posttt">
-    <h2>[ANIMATION] 3D Animation</h2>
-    <h5>3D Animated a short video || 3Ds Max || Dec 2021</h5>
-      <video width="100%" height="auto" controls>
-        <source src="Academic/DinoVideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    <p>3D Animation</p>
-    <p>I made a 3d animation themed: Google Chrome Dinosaur. It was in Bollywood style, I know. </p><br>
-  </div></div></div>
-
-      <div class="column competition">
-        <div class="content">
-      <div class="posttt">
-        <h2>[COMPETITION] Anatomy Drawing Competition</h2>
-        <h5>Learning human anatomy || Acrylic || July 2023</h5>
-        <video  width="100%" height="auto" controls>
-          <source src="Academic/anatomyDrawing.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p>Human Anatomy Art Competition</p>
-        <p>I studied human skeletal structure, circulatory system, muscle and created the art piece using acrylic, I won the third place.</p><br>
+    <div class="column academics">
+      <div class="content">
+        <div class="posttt">
+          <h2>[MACHINE LEARNING] Machine Learning</h2>
+          <h5>Study on risk factors associated with HIV || Python || Dec 2022</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/machineLearning.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Machine Learning</p>
+          <p>I studied the relationship between HIV risk factors and the death rate percentage dataset. We
+            analyzed and visualized the data using python, performed maximum likelihood estimation,
+            finding square sum differences of the linear and quadratic functions. </p><br>
+        </div>
       </div>
+    </div>
 
-    </div></div></div>
+    <div class="column robotics">
+      <div class="content">
+        <div class="posttt">
+          <h2>[EMBEDDED SYSTEM] Robot Car</h2>
+          <h5>Burning programs into robot car || C# TeraTerm Arduino Keil || March 2022</h5>
+          <video width="100%" height="auto" controls poster="Academic/thumbnails/robotCar.png">
+            <source src="Academic/robotCarDemoVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Robotics</p>
+          <p>I did simple soldering and assembled a robot car using the STM32F103 Black Pill as the main
+            microcontroller and an Arduino board for the controller. The car features ultrasound
+            functionality, infrared light for line tracking, and is equipped with Bluetooth remote
+            control.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="column programming">
+      <div class="content">
+        <div class="posttt">
+          <h2>[PROGRAMMING] Digit Invaders</h2>
+          <h5>Developing a classic digital game || C++ C# GUI || March 2021</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/miniGame.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>PolyU Invaders</p>
+          <p>I revamped the classic CASIO calculator game 'Digit Invader,' transforming it into a cool
+            graphical computer game.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="column academics">
+      <div class="content">
+        <div class="posttt">
+          <h2>[ANIMATION] 3D Animation</h2>
+          <h5>3D Animated a short video || 3Ds Max || Dec 2021</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/DinoVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>3D Animation</p>
+          <p>I made a 3d animation themed: Google Chrome Dinosaur. It was in Bollywood style, I know. </p><br>
+        </div>
+      </div>
+    </div>
 
+    <div class="column competition">
+      <div class="content">
+        <div class="posttt">
+          <h2>[COMPETITION] Anatomy Drawing Competition</h2>
+          <h5>Learning human anatomy || Acrylic || July 2023</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/anatomyDrawing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Human Anatomy Art Competition</p>
+          <p>I studied human skeletal structure, circulatory system, muscle and created the art piece using
+            acrylic, I won the third place.</p><br>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
 
 <div class="footer">
-</br>
-<div style="line-height: 1%">
-  <img style="height:50px; width: 400px;" src="./ArtWork/Logo.png" alt="RAYRAY">
-  <h5 style="color:rgb(209, 209, 209);">copyright @ 2002 RayRay,Idk.</h5>
+  <br>
+  <div style="line-height: 1%">
+    <img style="height:50px; width: 400px;" src="./ArtWork/Logo.png" alt="RAYRAY">
+    <h5 style="color:rgb(209, 209, 209);">copyright @ 2002 RayRay,Idk.</h5>
   </div>
-</br>
-  <h4 style="color:rgb(189, 189, 189)";><a style="color:rgb(221, 221, 221)"; href="https://youtu.be/xm3YgoEiEDc">
-    Contact My Legal Team</a>  &nbsp |  &nbsp
-
-   <a style="color:rgb(221, 221, 221)"; href="https://www.w3schools.com/">
-      Reference Link</a> &nbsp | &nbsp 
-
-    <a style="color:rgb(221, 221, 221)"; href="https://youtube.com/shorts/oOsER04ts3Y?feature=share">
-        Frequently Asked Question</a></h4>
-      </br>   
-
-    
+  <br>
+  <h4 style="color:rgb(189, 189, 189);"><a style="color:rgb(221, 221, 221);" href="https://youtu.be/xm3YgoEiEDc">
+    Contact My Legal Team</a> &nbsp; | &nbsp;
+    <a style="color:rgb(221, 221, 221);" href="https://www.w3schools.com/">Reference Link</a> &nbsp; | &nbsp;
+    <a style="color:rgb(221, 221, 221);" href="https://youtube.com/shorts/oOsER04ts3Y?feature=share">
+      Frequently Asked Question</a></h4>
+  <br>
 </div>
 
-        <!-- Load external JavaScript -->
-        <script src="scripts.js"></script>
-        
-    </body>
+<!-- Load JavaScript -->
+<script src="scripts.js"></script>
+
+</body>
 
 </html>

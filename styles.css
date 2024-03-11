@@ -96,7 +96,7 @@ body {
   padding: 14px 20px;
   text-decoration: none;
   z-index: 3;
-  
+
 }
 
 /* Right-aligned link */
@@ -127,7 +127,7 @@ body {
 
 
 /* Column container */
-.row {  
+.row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
@@ -144,7 +144,7 @@ body {
 }
 
 /* Main column */
-.main {   
+.main {
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
@@ -165,36 +165,37 @@ body {
   background: rgb(95, 95, 95);
 }
 
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  /* Assuming you have a .row element */
+  .row {
     flex-direction: column;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
-.column{
-  min-width: 280px;
-}
+  /* Adjusting the min-width for specific columns */
+  .column {
+    min-width: 250px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-.column{
-  max-width: 700px;
+  /* Adjusting the max-width for specific columns */
+  .column {
+    max-width: 700px;
+  }
 }
-}
-
-
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
+  /* Adjusting the style for navbar links */
   .navbar a {
     float: none;
     width: 100%;
   }
 }
+
 .cursive{
     font-style: italic;
     color: rgba(255, 255, 255, 0.795);
@@ -215,11 +216,11 @@ body {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0072cf;
   }
-  
+
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #60faff;
   }
-  
+
 }
 
 .overlay {
@@ -275,30 +276,18 @@ body {
 
 .posttt{
   background-color: #e6e6e6;
-  margin:0px 20px;
+  margin:0px 5px;
   padding: 10px 20px 10px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Art Galary */
 /* Art Galary */
 /* Art Galary */
 /* Art Galary */
 /* Art Galary */
 
-.main1 {   
+.main1 {
 
   background-color: rgb(143, 0, 0);
 

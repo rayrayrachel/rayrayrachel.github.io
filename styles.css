@@ -10,6 +10,10 @@ body {
   padding: 20px;
 }
 
+.p {
+  text-align: justify;
+}
+
 /* Header/logo Title */
 .header {
   padding: 80px;
@@ -177,6 +181,7 @@ body {
   /* Adjusting the min-width for specific columns */
   .column {
     min-width: 250px;
+    text-align: justify;
   }
 }
 
@@ -184,6 +189,7 @@ body {
   /* Adjusting the max-width for specific columns */
   .column {
     max-width: 700px;
+    text-align: justify;
   }
 }
 
@@ -351,4 +357,24 @@ body {
 #myBtnContainer{
 background-color: #d1d4d4;
 padding:5px;
+}
+
+/* hide text */
+.hidden {
+  display: none;
+}
+
+/* Show More Text Button */
+.toggle-button {
+  background-color: #3c86da; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }

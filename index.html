@@ -70,14 +70,88 @@
     <div style="border-bottom: 5px solid white;border-left: 15px solid white;border-right: 15px solid white;">
       <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection2('all')"> ALL</button>
+        <button class="btn" onclick="filterSelection2('academics')"> ACADEMICS</button>
         <button class="btn" onclick="filterSelection2('programming')"> PROGRAMMING</button>
         <button class="btn" onclick="filterSelection2('robotics')"> ROBOTICS</button>
-        <button class="btn" onclick="filterSelection2('academics')"> ACADEMICS</button>
         <button class="btn" onclick="filterSelection2('competition')"> COMPETITION</button>
       </div>
     </div>
 
     <!-- Content columns -->
+    <div class="column programming">
+      <div class="content">
+        <div class="posttt">
+          <h2>[PROGRAMMING] Visual Computing</h2>
+          <h5>Developing a Photoshop application || Java Intellij || February 2024</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/visualComputing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Developing Photoshop</p>
+          <p>I developed an application that can apply gamma correction, nearest neighbor interpolation, bilinear interpolation and cross correlation to an image, pixel by pixel. The filter used is laplacian 5x5 filter. </p>
+          <p class="hidden">
+            IMAGE LOOP</br>
+            - Image are 2D arrays of RGB vlaues</br>
+            - Pixel position = I[Xcoordinate][Ycoordinate]</br>
+            - Color of the pixel = I[Xcoordinate][Ycoordinate][color]</br>
+            </br>
+            GAMMA CORRECTION </br>
+            - Aim: to adjust the intensity(brightness) of the image </br>
+            - Euqation: newIntensity = (originalIntensity) ^ ( 1 / gammaValue)</br>
+            - Java normalisation: 0..255 value => 0..1 in java </br>
+            - Gamma lookup table: match value with the table to reduce computing time</br>
+            </br>
+            IMAGE RESIZEING - Nearest Neighbour Interpolation </br>
+            - Aim: to reduce/ expand the image using nearest neighbour interpolation</br>
+            - Equation: original_x_coordinate = new_x_coordinate * (original_width / new_width)</br>
+            - Equation: original_y_coordinate = new_y_coordinate * (original_height / new_height)</br>
+            - Finally convert them to the nearest integer</br>
+            </br>
+            INAGE RESIZING - Bilinear Interpolation</br>
+            - Aim: To reduce/expand the image using bilinear interpolation.</br>
+            - Get the four corners' color.</br>
+            - Apply linear interpolation horizontally.</br>
+            - Apply linear interpolation vertically.</br>
+            - Apply linear interpolation to the above two values.</br>
+            Linear interpolation equation for horizontal interpolation:</br>
+            new_color_value = original_color_value_at_x1 + (original_color_value_at_x2 - original_color_value_at_x1) * ((new_x_coordinate - original_x1_coordinate) / (new_x2_coordinate - original_x1_coordinate))</br>
+            Linear interpolation equation for vertical interpolation:</br>
+            new_color_value = original_color_value_at_y1 + (original_color_value_at_y2 - original_color_value_at_y1) * ((new_y_coordinate - original_y1_coordinate) / (new_y2_coordinate - original_y1_coordinate))</br>
+            </br>
+            CROSS CORRELATION - LAPLACIAN FILTER</br>
+            - Aim: apply laplacian filter to the image</br>
+            - Find the weighted sums of each pixel in the three different color channels by multiplying the pixel values and the corresponding 5x5 pixel values with the filter.</br>
+            - Utilize a loop to find the maximum and minimum values of the three color channels.</br>
+            - Create the final image by normalizing the values using the formula:</br>
+            normalizedValue = (weightedSums - min) / (max - min).</br>
+          </p><button class = "toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="column academics">
+      <div class="content">
+        <div class="posttt">
+          <h2>[MACHINE LEARNING] 8 Queens Puzzle</h2>
+          <h5>Solve the 8 queen Puzzle with Genetic Algorithms || Python || February 2024</h5>
+          <video width="100%" height="auto" controls>
+            <source src="Academic/geneticAlgorithm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Genetic Algorithm</p>
+          <p>I applied genetic algorithm to solve the 8-queen-puzzle. The aim is to find the location of 8 queens on a chessboard such that they cannot attack each other.       </p>
+          <p class="hidden">I have functions to randomly generated the list of coordinates of the seven queens in different columns. The fixed queen's coordinates were inserted based on my student ID’s modulo plus 1, with coordinates ranging from 1 to 8, originating at the bottom left.<br><br>
+
+              Functions are implemented to flatten the list and extract the x-coordinates. Other functions calculate the number of pairs of attacking queens: horizontally, vertically, and diagonally, as well as determine the fitness level (maximum conflict(28) minus the board conflicts).<br><br>
+
+              Applying genetic algorithm, the population and generation size is set to 150 and 200. For each generation, there are 150 randomly generated queen coordinate with the fixed queen. Individual fitness is then calculated, and the orientations are sorted in descending order. If the first item in the list equals 28 (maximum fitness), the result is returned, indicating that the puzzle is solved. If there is no solution in this generation, the program selects the first half of the population list (highest fitness) as parents. It performs splitting at random indexes (unchanged fixed queen), resulting in swapping along the split to create offspring. Afterward, mutations (random swapping of two queens' x-coordinates) are applied, resulting in a final population of 75 parents and 75 offspring. This process is repeated 200 generations until result is found.<br><br>
+
+              To find all solutions, the function is looped 100 times, appending and returning successful solutions. The sampling size is set to be sufficiently large for capturing all solutions efficiently.</p>
+          <button class = "toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+        </div>
+      </div>
+    </div>
+
     <div class="column programming">
       <div class="content">
         <div class="posttt">

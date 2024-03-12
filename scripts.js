@@ -76,3 +76,16 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// Show More Button
+function toggleMore(button) {
+  var post = button.closest('.posttt'); // Find the closest parent element with class 'posttt'
+  var hiddenContent = post.querySelector('.hidden');
+  if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') { // Check for both 'none' and '' (initial state)
+    hiddenContent.style.display = 'block';
+    button.textContent = 'OK SHUT UP';
+  } else {
+    hiddenContent.style.display = 'none';
+    button.textContent = 'IM A NERD';
+  }
+}

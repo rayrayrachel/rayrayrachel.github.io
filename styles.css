@@ -203,11 +203,11 @@ body {
 }
 
 .cursive{
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.795);
-    font-family: "Times New Roman";
-    text-shadow: 0 0 30px rgb(255, 255, 255);
-    z-index: 2;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.795);
+  font-family: "Times New Roman";
+  text-shadow: 0 0 30px rgb(255, 255, 255);
+  z-index: 2;
 }
 
 .glow {
@@ -351,12 +351,12 @@ body {
 /* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
-   color: white;
+  color: white;
 }
 
 #myBtnContainer{
-background-color: #d1d4d4;
-padding:5px;
+  background-color: #d1d4d4;
+  padding:5px;
 }
 
 /* hide text */

@@ -116,16 +116,66 @@
           <!-- Content Filter-->
           <div class="filter-navbar">
             <div id="myBtnContainer">
-              <button class="filter-btn active" onclick="filterSelection2('all')">ALL</button>
-              <button class="filter-btn" onclick="filterSelection2('academics')">ACADEMICS</button>
-              <button class="filter-btn" onclick="filterSelection2('programming')">PROGRAMMING</button>
-              <button class="filter-btn" onclick="filterSelection2('robotics')">ROBOTICS</button>
-              <button class="filter-btn" onclick="filterSelection2('competition')">COMPETITION</button>
+              <button class="filter-btn active" onclick="filterSelection('all', this)">ALL</button>
+              <button class="filter-btn" onclick="filterSelection('programming', this)">PROGRAMMING</button>
+              <button class="filter-btn" onclick="filterSelection('academics', this)">ACADEMICS</button>
+              <button class="filter-btn" onclick="filterSelection('robotics', this)">ROBOTICS</button>
+              <button class="filter-btn" onclick="filterSelection('competition', this)">COMPETITION</button>
             </div>
           </div>
 
 
           <!-- Content columns -->
+
+          <div class="column programming">
+            <div class="content">
+              <div class="posttt">
+                <h2>[PROGRAMMING] Mobile Application Development</h2>
+                <h5>[Solo Project] Daily Trivia Quiz App || Kotlin, Android Studio || October 2024</h5>
+
+                <!-- YouTube Embed -->
+                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
+                  <iframe src="https://www.youtube.com/embed/2ebLml_eBYI&t"
+                    style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+
+                <p>Exam SOS Daily Trivia Quiz App</p>
+                <p>I made a gamefied daily trivia quiz app using android studio. </p>
+
+                <p class="hidden">
+
+                  The app is a gamified trivia quiz app designed to enhance general knowledge and encourage consistent
+                  learning. The app
+                  features a streak system that motivates daily engagement, diverse quiz modes (daily trivia,
+                  customizable, randomized,
+                  and a 150-question Marathon), and interactive mechanics like three lives and a progress bar for
+                  real-time feedback.
+                  <br>
+                  <br>
+
+                  Users can personalize their experience by choosing difficulty, categories, question counts, and
+                  notification timings. A
+                  built-in scoring and reward system lets users unlock cosmetic icons, while detailed performance
+                  tracking supports
+                  progress monitoring and self-improvement. The app also includes background music customization,
+                  notification controls,
+                  and account management options such as account deletion for privacy.
+                  <br>
+                  <br>
+
+                  By blending gamification, personalization, and retention mechanics, Exam SOS transforms trivia into an
+                  engaging,
+                  habit-building learning experience.
+
+                </p><button class="glow-btn" onclick="toggleMore(this)">Show More</button>
+                <br>
+              </div>
+            </div>
+          </div>
+
 
           <div class="column programming">
             <div class="content">
@@ -144,7 +194,10 @@
 
                 <p>Web Application</p>
                 <p>I made a single-page academic portfolio web application where users can create, manage, and interact
-                  with projects. It features a tiered authorization system (guest, registered user, admin), embedded
+                  with projects. </p>
+
+                <p class="hidden">
+                  features a tiered authorization system (guest, registered user, admin), embedded
                   multimedia support
                   (YouTube videos, images), and real-time interactions (comments and likes). Likes are handled via
                   polymorphic
@@ -155,7 +208,8 @@
                   efficient
                   content moderation, making it a robust and user-friendly tool for academic portfolio creation and
                   engagement.
-                </p><br>
+                </p><button class="glow-btn" onclick="toggleMore(this)">Show More</button>
+                <br>
               </div>
             </div>
           </div>
@@ -224,7 +278,7 @@
                   - Utilize a loop to find the maximum and minimum values of the three color channels.<br>
                   - Create the final image by normalizing the values using the formula:<br>
                   normalizedValue = (weightedSums - min) / (max - min).<br>
-                </p><button class="toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+                </p><button class="glow-btn" onclick="toggleMore(this)">Show More</button>
               </div>
             </div>
           </div>
@@ -270,7 +324,7 @@
                   To find all solutions, the function is looped 100 times, appending and returning successful solutions.
                   The
                   sampling size is set to be sufficiently large for capturing all solutions efficiently.</p>
-                <button class="toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+                <button class="glow-btn" onclick="toggleMore(this)">Show More</button>
               </div>
             </div>
           </div>
@@ -345,7 +399,7 @@
 
                   <br>
 
-                </p><button class="toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+                </p><button class="glow-btn" onclick="toggleMore(this)">Show More</button>
               </div>
             </div>
           </div>
@@ -424,7 +478,7 @@
                   This digital game can log into different user, store scores into user profiles, has highs-core table,
                   admin configuration and the gameplay.
 
-                </p><button class="toggle-button" onclick="toggleMore(this)">IM A NERD</button>
+                </p><button class="glow-btn" onclick="toggleMore(this)">Show More</button>
               </div>
             </div>
           </div>

@@ -27,17 +27,23 @@ function filterSelection2(c) {
   }
 }
 
-filterSelection("all") // Execute the function and show all columns
-function filterSelection(c) {
+function filterSelection(c, btn) {
   var x, i;
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
   }
+
+  var btns = document.getElementsByClassName("filter-btn");
+  for (i = 0; i < btns.length; i++) {
+    btns[i].classList.remove("active");
+  }
+  btn.classList.add("active"); 
 }
+
 
 // Show filtered elements
 function addClass(element, name) {
@@ -81,10 +87,10 @@ function toggleMore(button) {
   var hiddenContent = post.querySelector('.hidden');
   if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') { // Check for both 'none' and '' (initial state)
     hiddenContent.style.display = 'block';
-    button.textContent = 'OK SHUT UP';
+    button.textContent = 'HIDE ME';
   } else {
     hiddenContent.style.display = 'none';
-    button.textContent = 'IM A NERD';
+    button.textContent = 'SHOW MORE';
   }
 }
 

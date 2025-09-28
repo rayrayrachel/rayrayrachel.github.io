@@ -295,6 +295,37 @@ body {
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
 }
 
+.glow-btn {
+  background: #0ff;
+  border: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  border-radius: 5px;
+  color: #111;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  flex: 0 1 auto;
+  margin-bottom: 10px;
+}
+
+.glow-btn:hover {
+  background: #001f4d;
+  border-color: #001f4d;
+  color: #fff;
+  box-shadow: 0 0 15px #001f4d, 0 0 30px #001f4d;
+  transform: translateY(-3px);
+}
+
+.glow-btn.active {
+  background: #001f4d;
+  border-color: #001f4d;
+  color: #fff;
+  box-shadow: 0 0 20px #001f4d, 0 0 40px #001f4d;
+}
+
 @media (max-width: 500px) {
   .filter-btn {
     flex: 1 1 100%;

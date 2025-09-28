@@ -86,10 +86,9 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
+
+.sidebar.hide {
+  display: none;
 }
 
 .sidebar-links {
@@ -314,6 +313,43 @@ body {
 
 }
 
+
+/* float button */
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.my-float {
+  margin-top: 22px;
+  font-size: 24px;
+}
+
+.float-goTopBtn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  left: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.my-float-goTopBtn {
+  margin-top: 22px;
+  font-size: 24px;
+}
+
+
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -323,6 +359,7 @@ body {
   backdrop-filter: blur(4px);
   padding: 20px;
   border-radius: 12px;
+
 }
 
 /* Main column */

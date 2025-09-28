@@ -27,11 +27,23 @@
     </div>
 
     <!-- Main -->
+
+    <div class="float" onclick="togglePopup()">
+      <i id="toggleBtn" class="my-float filter-btn">×</i>
+    </div>
+
+    <div id="goTopBtn" class="float-goTopBtn" onclick="scrollToTop()">
+      <i class="my-float-goTopBtn filter-btn">↑</i>
+    </div>
+
+
     <div class="row">
 
       <!-- Side Bar -->
-      <div class="side sidebar">
+      <div class="side sidebar" id="sidebar">
         <h2>About Me</h2>
+        <h6>Hi, I am Rachel, welcome to my blog.</h6>
+
         <div class="image-container">
           <img class="myphoto" style="height:250px; width: 195px;  border-radius: 50%" src="./ArtWork/me.gif"
             alt="Image">
@@ -39,7 +51,7 @@
         <h6>Please don't waste too much time hovering :)</h6>
         <!-- Hobby Nevigation -->
 
-        <h3>CLICK ME TO NAVIGATE</h3>
+        <h3>NAVIGATE TO CHECK OUT MY HOBBIES.</h3>
         <div class="sidebar-links">
           <a href="./Art" class="sidebar-item">
             <i class="fa fa-paint-brush"></i>
@@ -52,7 +64,7 @@
         </div>
 
         <!-- Skills -->
-        <h3>CLICK TO SHOW MORE</h3>
+        <h3>CLICK TO SHOW MY SKILLS</h3>
 
         <h3 class="collapsible">💎 Programming</h3>
         <div class="drop-down-content">

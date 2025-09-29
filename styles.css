@@ -429,7 +429,7 @@ body {
 
   /* Adjusting the min-width for specific columns */
   .column {
-    min-width: 250px;
+    min-width: 400px;
     text-align: justify;
     width: 100%;
   }

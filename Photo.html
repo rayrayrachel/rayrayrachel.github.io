@@ -32,12 +32,14 @@
                     <h5>DISCLAIMER: All photos are taken by me.</h5>
                 </div>
             </div>
+            <div class="filter-navbar">
 
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')">ALL</button>
-                <button class="btn" onclick="filterSelection('nature')">NATURE</button>
-                <button class="btn" onclick="filterSelection('focus')">FOCUS</button>
-                <button class="btn" onclick="filterSelection('city')">CITY</button>
+                <div id="myBtnContainer">
+                    <button class="filter-btn active" onclick="filterSelection('all', this)">ALL</button>
+                    <button class="filter-btn" onclick="filterSelection('nature', this)">NATURE</button>
+                    <button class="filter-btn" onclick="filterSelection('focus', this)">FOCUS</button>
+                    <button class="filter-btn" onclick="filterSelection('city', this)">CITY</button>
+                </div>
             </div>
 
             <div class="row">

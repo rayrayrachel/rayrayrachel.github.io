@@ -413,7 +413,7 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: rgb(95, 95, 95);
+  background: rgb(17, 17, 17);
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -652,7 +652,7 @@ body {
 /* Card grid */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 25px;
   padding: 40px;
   color: white;
